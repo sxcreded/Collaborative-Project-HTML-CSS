@@ -1,0 +1,75 @@
+.headerWrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid transparent;
+  border-image: radial-gradient(circle, rgb(0, 85, 255), rgb(3, 44, 168), rgb(3, 2, 77));
+  border-image-slice: 1;
+}
+
+header {
+  list-style: none;
+  display: flex;
+}
+
+.logo {
+  width: 35%;
+  margin-right: auto;
+}
+
+nav {
+  margin-bottom: auto;
+  margin-top: auto;
+  text-decoration: none;
+  font-family: Roboto Light;
+}
+
+nav a {
+  display: inline-flex;
+  color: black;
+  font-size: 1em;
+}
+
+nav ul {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #2F56B0;
+  position: relative;
+  text-decoration: none;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+nav ul ul li {
+  display: block;
+  float: none;
+}
+
+nav ul ul li a {
+  display: block;
+  padding: 5px;
+  color: #2F56B0;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
